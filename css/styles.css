@@ -1,0 +1,178 @@
+/* --- Global Styles & Resets --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Header Banner --- */
+.main-header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 25px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.main-header h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.main-header p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* --- White Card Containers --- */
+.card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px; /* Replaces <br> spacing between cards */
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+
+/* --- Image Formats --- */
+.image-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-normal {
+    width: 260px;
+    border-radius: 6px;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img-oval {
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* --- Table Styling --- */
+.practice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: center;
+}
+
+.practice-table th {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    font-weight: normal;
+}
+
+.practice-table td {
+    padding: 12px 10px;
+    border: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+/* --- Form Layouts (Using Margins/Padding Instead of <br>) --- */
+.form-title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.practice-form {
+    max-width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px; /* Safe, consistent vertical spacing */
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #2d3748;
+}
+
+.required {
+    color: #e53e3e;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 13px;
+    outline: none;
+}
+
+.form-file {
+    font-size: 13px;
+}
+
+.radio-checkbox-group {
+    display: flex;
+    gap: 15px;
+    padding-top: 4px;
+}
+
+.radio-checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* --- Action Buttons --- */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Provides top separation natively */
+}
+
+.btn {
+    padding: 8px 18px;
+    font-size: 13px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #357abd;
+}
