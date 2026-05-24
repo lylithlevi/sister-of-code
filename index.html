@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Sreyneang Practice Webpage</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<!-- Main Content -->
+    <header class="main-header">
+        <h1>Um Sreyneang Practice Webpage</h1>
+        <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+    </header>
+
+<!-- Photos Section -->
+    <main class="container">
+        
+        <section class="card">
+            <h2 class="card-title">Image Section</h2>
+            <div class="image-box">
+                <img src="images/cat.jpg" alt="cat" class="img-normal">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="card-title">Image Circle</h2>
+            <div class="image-box">
+                <img src="images/cat.jpg" alt="cat" class="img-circle">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="card-title">Image Oval</h2>
+            <div class="image-box">
+                <img src="images/cat.jpg" alt="cat" class="img-oval">
+            </div>
+        </section>
+<!-- Table Section -->
+        <section class="card">
+            <h2 class="card-title">Advanced Table</h2>
+            <table class="practice-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Name</th>
+                        <th colspan="2">Scores</th>
+                        <th rowspan="2">Grade</th>
+                    </tr>
+                    <tr>
+                        <th>Math</th>
+                        <th>CS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tola</td>
+                        <td>50</td>
+                        <td>85</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Neang</td>
+                        <td>50</td>
+                        <td>85</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <!--Basic Form Section -->
+        <section class="card">
+            <h2 class="card-title form-title">Form 1: Basic Info</h2>
+            <form class="practice-form">
+                <div class="form-group">
+                    <label class="form-label">Name <span class="required">*</span></label>
+                    <input type="text" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email <span class="required">*</span></label>
+                    <input type="email" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Password <span class="required">*</span></label>
+                    <input type="password" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Upload File</label>
+                    <input type="file" class="form-file">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn">Reset</button>
+                </div>
+            </form>
+        </section>
+<!-- Survey Form Section -->
+        <section class="card">
+            <h2 class="card-title form-title">Form 2: Survey Form</h2>
+            <form class="practice-form">
+                <div class="form-group">
+                    <label class="form-label">Choose Course <span class="required">*</span></label>
+                    <select class="form-input" required>
+                        <option value="">-- Select --</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <div class="radio-checkbox-group">
+                        <label><input type="radio" name="gender"> female</label>
+                        <label><input type="radio" name="gender"> male</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Skills</label>
+                    <div class="radio-checkbox-group">
+                        <label><input type="checkbox"> HTML</label>
+                        <label><input type="checkbox"> CSS</label>
+                        <label><input type="checkbox"> JS</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Phone <span class="required">*</span></label>
+                    <input type="tel" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-input" rows="4"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
